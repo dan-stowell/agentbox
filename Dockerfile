@@ -15,5 +15,7 @@ RUN chmod +x /tmp/setup.sh && \
     /tmp/setup.sh && \
     rm /tmp/setup.sh
 
+COPY agentbox.bazelrc /root/.bazelrc
+
 ENV PATH="/root/.local/bin:${PATH}"
 WORKDIR /workspace
