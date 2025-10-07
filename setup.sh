@@ -20,9 +20,9 @@ curl -fsSL -o bazelisk \
 
 mv bazelisk /root/.local/bin
 
-curl -fsSL -o codex-aarch64-unknown-linux-musl.tar.gz \
-	https://github.com/openai/codex/releases/download/rust-v0.45.0/codex-aarch64-unknown-linux-musl.tar.gz
+curl -fsSL -o codex-aarch64-unknown-linux-gnu.tar.gz \
+	https://github.com/openai/codex/releases/download/rust-v0.45.0/codex-aarch64-unknown-linux-gnu.tar.gz
 
-tar zxf codex-aarch64-unknown-linux-musl.tar.gz
-mv codex-aarch64-unknown-linux-musl /root/.local/bin/codex
-rm codex-aarch64-unknown-linux-musl.tar.gz
+tar zxf codex-aarch64-unknown-linux-gnu.tar.gz
+mv codex-aarch64-unknown-linux-gnu /root/.local/bin/codex
+rm codex-aarch64-unknown-linux-gnu.tar.gz
