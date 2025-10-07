@@ -10,6 +10,7 @@ container run \
 	--interactive \
 	--tty \
 	--remove \
+	--env "CLAUDE_CONFIG_DIR=/root/.claude" \
 	--volume $HOME/.config/agentbox/cache:/root/.cache/ \
 	--volume $HOME/.config/agentbox/claude:/root/.claude \
 	--volume $HOME/.config/agentbox/codex/:/root/.codex \
