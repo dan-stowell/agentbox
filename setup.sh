@@ -17,7 +17,8 @@ curl -fsSL https://claude.ai/install.sh | bash -s 2.0.9
 
 curl -fsSL -o bazelisk \
 	https://github.com/bazelbuild/bazelisk/releases/download/v1.27.0/bazelisk-linux-arm64
-
+chmod +x bazelisk
+./bazelisk version
 mv bazelisk /root/.local/bin
 
 curl -fsSL -o codex-aarch64-unknown-linux-gnu.tar.gz \
